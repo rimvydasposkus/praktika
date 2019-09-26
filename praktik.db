@@ -1,0 +1,38 @@
+--
+-- Database: `praktika`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `praktik`
+--
+
+CREATE TABLE IF NOT EXISTS `praktik` (
+  `comment_id` int(11) NOT NULL,
+  `parent_comment_id` int(11) NOT NULL,
+  `comment` varchar(500) CHARSET=utf16_lithuanian_ci	 NOT NULL,
+  `comment_nam` CHARSET=utf16_lithuanian_ci	 varchar(50) NOT NULL,
+  `comment_emails` CHARSET=utf16_lithuanian_ci	 varchar(50) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf16_lithuanian_ci	;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `praktik`
+--
+ALTER TABLE `praktik`
+  ADD PRIMARY KEY (`comment_id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `praktik`
+--
+ALTER TABLE `praktik`
+  MODIFY `praktik` int(11) NOT NULL AUTO_INCREMENT;
